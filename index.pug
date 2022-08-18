@@ -1,8 +1,9 @@
 include ./pug/components/_head.pug
+include ./pug/_variables.pug
 doctype html
 html(lang="es")
-    +head("menu hamburguesa sin usar javascript", "#8BD834", "urlico", "./ccs/style.css", "urlcss2", "urlcss3", "urlfont1", "urlfont2", "menu hamburguesa")
+    +head("menu hamburguesa sin usar javascript", "#8BD834", "urlico", "./css/styles.css", "urlcss2", "urlcss3", "urlfont1", "urlfont2", "menu hamburguesa")
     body 
-    //- include ruta header 
+        include ./pug/_header.pug
     //- include ruta contenido o varios 
     //- include footer

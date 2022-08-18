@@ -1,0 +1,11 @@
+-var listas = ["1","clases", "blog", "foro"] 
+mixin lists(urlimg1, urlimg2, desc1, desc2)
+    ul.nav__menu 
+        each lista in listas
+            if lista == "1"
+                li.nav__menu--logo
+                    img(src=""+urlimg1, alt=""+desc1)
+                    img(src=""+urlimg2, alt=""+desc2)
+            else
+                li.nav__menu--items
+                    a(href="#") #{lista} 
