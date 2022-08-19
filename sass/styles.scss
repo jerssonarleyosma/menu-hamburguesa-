@@ -12,12 +12,13 @@ body {
 .nav {
     width: 100vw;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     border-bottom: 8px solid  $third;
     background-color: $first;
     &__menu{
-        width: 80vw;
-        display: flex;
+        width: 100%;
+        display: none;
         flex-direction: column;
         align-items: center;
         & li {
@@ -28,9 +29,6 @@ body {
                 text-decoration: none;
                 color: $third;
             }
-        }
-        &--items {
-            display: none;
         }
         &--logo {
             margin: 20px;
@@ -50,7 +48,7 @@ body {
         }
     }
     &__checkbox {
-        display: none;
+        display: block;
     }
     &__toggle{
         width: 20vw;
@@ -70,15 +68,30 @@ body {
         }
     }
 }
-#nav__checkbox:checked ~ .nav__menu .nav__menu--items {
+#nav__checkbox:checked ~ .nav__menu--items {
     display: block;
 }
 
-#nav-checkbox:checked ~ .nav__toggle .nav__toggle--menu {
+#nav-checkbox:checked ~ .nav__toggle--menu {
     display: none;
 }
 
-#nav-checkbox:checked ~ .nav__toggle .nav__toggle--close {
+#nav-checkbox:checked ~ .nav__toggle--close {
     display: block;
 }
+.show{
+    display: none;
+}
+
+.nav__checkbox:checked ~ .nav__menu {
+    display: block;
+}
+
+.figure{
+    display: flex;
+    width: 400px;
+    height: 150px;
+    margin: 8px;
+}
+
 
