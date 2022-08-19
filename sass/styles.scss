@@ -88,10 +88,14 @@ body {
 }
 
 .figure{
+    width: 200px;
     display: flex;
-    width: 400px;
-    height: 150px;
-    margin: 8px;
+    flex-direction: row-reverse;
+    margin: 28px;
+    & img {
+        width: 40%;
+        margin: 0 25px 0 0;
+    }
 }
 
 
