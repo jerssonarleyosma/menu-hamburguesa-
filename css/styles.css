@@ -27,7 +27,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: 8px solid #ffd414;
+  border-bottom: 8px solid #daa336;
   background-color: #221a44;
 }
 .nav__menu {
@@ -42,13 +42,20 @@ body {
           align-items: center;
 }
 .nav__menu li {
+  margin: 25px 0;
   list-style-type: none;
   font-size: 3rem;
   font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .nav__menu li a {
   text-decoration: none;
-  color: #ffd414;
+  color: #daa336;
 }
 .nav__menu--logo {
   margin: 20px;
@@ -74,7 +81,7 @@ body {
       align-self: center;
 }
 .nav__checkbox {
-  display: block;
+  display: none;
 }
 .nav__toggle {
   width: 20vw;
@@ -91,7 +98,7 @@ body {
 }
 .nav__toggle--menu {
   display: block;
-  fill: #ffd414;
+  fill: #daa336;
 }
 .nav__toggle--close {
   display: none;
@@ -108,10 +115,6 @@ body {
 
 #nav-checkbox:checked ~ .nav__toggle--close {
   display: block;
-}
-
-.show {
-  display: none;
 }
 
 .nav__checkbox:checked ~ .nav__menu {
