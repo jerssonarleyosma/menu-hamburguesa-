@@ -71,15 +71,12 @@ body {
         }
     }
 }
-#nav__checkbox:checked ~ .nav__menu--items {
-    display: block;
-}
 
-#nav-checkbox:checked ~ .nav__toggle--menu {
+#nav-checkbox:checked ~ .nav__toggle .nav__toggle--menu {
     display: none;
 }
 
-#nav-checkbox:checked ~ .nav__toggle--close {
+#nav-checkbox:checked ~ .nav__toggle .nav__toggle--close {
     display: block;
 }
 
